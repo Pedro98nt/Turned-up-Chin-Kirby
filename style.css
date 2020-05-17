@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  color: #333;
+  background: #33aa3388;
+  align-items: center;
+}
+
+.kirby {
+  width: 320px;
+  transform: scale(0.7);
+  margin-top: -40px;
+  height: 330px;
+}
+.kirby--face {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #f69d99;
+}
+.kirby--left-eye {
+  width: 40px;
+  top: 60px;
+  position: absolute;
+  left: 150px;
+  height: 90px;
+  border-radius: 50%;
+  background: #333;
+}
+.kirby--left-eye::before {
+  width: 20px;
+  top: 4px;
+  position: absolute;
+  left: 10px;
+  height: 40px;
+  content: "";
+  border-radius: 50%;
+  background: #fefefe;
+}
+.kirby--left-eye::after {
+  width: 20px;
+  top: 64px;
+  position: absolute;
+  left: 10px;
+  height: 20px;
+  content: "";
+  border-radius: 0 0 50% 50%;
+  background: #4466bf;
+}
+.kirby--right-eye {
+  width: 40px;
+  top: 60px;
+  position: absolute;
+  left: 225px;
+  height: 90px;
+  border-radius: 50%;
+  background: #333;
+  transform: scaleX(0.9);
+}
+.kirby--right-eye::before {
+  width: 20px;
+  top: 4px;
+  position: absolute;
+  left: 10px;
+  height: 40px;
+  content: "";
+  border-radius: 50%;
+  background: #fefefe;
+}
+.kirby--right-eye::after {
+  width: 20px;
+  top: 64px;
+  position: absolute;
+  left: 10px;
+  height: 20px;
+  content: "";
+  border-radius: 0 0 50% 50%;
+  background: #4466bf;
+}
+.kirby--left-eye-shadow {
+  width: 20px;
+  top: 112px;
+  position: absolute;
+  left: 160px;
+  height: 20px;
+  border-radius: 50%;
+  background: #333;
+}
+.kirby--right-eye-shadow {
+  width: 20px;
+  top: 112px;
+  position: absolute;
+  left: 235px;
+  height: 20px;
+  border-radius: 50%;
+  background: #333;
+  transform: scaleX(0.9);
+}
+.kirby--left-cheek {
+  width: 45px;
+  top: 150px;
+  position: absolute;
+  left: 105px;
+  height: 25px;
+  border-radius: 50%;
+  background: #e47575;
+}
+.kirby--right-cheek {
+  width: 45px;
+  top: 150px;
+  position: absolute;
+  left: 250px;
+  height: 25px;
+  border-radius: 50%;
+  background: #e47575;
+  transform: scaleX(0.9);
+}
+.kirby--chin {
+  width: 150px;
+  top: 170px;
+  position: absolute;
+  left: 160px;
+  height: 126px;
+  border-width: 4px 0 0 0;
+  border-style: solid;
+  border-radius: 0 20px 150px 0;
+  border-color: #e58c88;
+  background: #f69d99;
+}
+.kirby--hand {
+  width: 60px;
+  transform: rotate(110deg);
+  top: 170px;
+  position: absolute;
+  left: 20px;
+  height: 70px;
+  border-width: 4px 4px 4px 0;
+  border-style: solid;
+  border-radius: 0 40px 40px 0;
+  border-color: #e58c88;
+  background: #f69d99;
+}
+.kirby--left-leg {
+  width: 160px;
+  top: 260px;
+  position: absolute;
+  left: 20px;
+  height: 70px;
+  border-radius: 50px 80px 5px 10px;
+  background: #a92c3c;
+}
+.kirby--right-leg {
+  z-index: -1;
+  width: 160px;
+  top: 260px;
+  position: absolute;
+  left: 120px;
+  height: 70px;
+  border-radius: 50px 80px 5px 10px;
+  background: #a92c3c;
+  transform: scale(0.4);
+}
+
+.buttons {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.buttons {
+  display: float;
+  top: -40px;
+}
+
+.button {
+  width: 150px;
+  text-align: center;
+  height: 40px;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  border-radius: 10px;
+  background: #f69d99;
+  align-items: center;
+}
+.button:hover {
+  background: #e47575;
+}
+.button::selection {
+  background: none;
+}
+
+.go-button__color {
+  color: #333;
+  background: #f69d99;
+}
+.go-button__color:hover {
+  color: #f69d99;
+  background: #333;
+}
+
+.score-area {
+  transform: scale(0.7);
+  top: 0;
+  position: absolute;
+  margin: 20px 0;
+  right: 20px;
+}
+
+.score {
+  text-shadow: 1px 1px 2px #e58c88;
+  font-weight: 700;
+  font-size: 80px;
+  color: #f69d9988;
+}
